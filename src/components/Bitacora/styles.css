@@ -1,0 +1,85 @@
+
+.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background):hover {
+    background-color: var(--wp--preset--color--secondary);
+    color: var(--wp--preset--color--background);
+    border-color: var(--wp--preset--color--secondary)
+}
+
+a {
+    text-decoration-thickness: .5px !important;
+    text-underline-offset: .05em
+}
+
+.wp-block-button.is-style-outline>.wp-block-button__link {
+    padding: calc(10px - 1px) calc(15px - 1px);
+    border: 1px solid var(--wp--preset--color--foreground)
+}
+
+.wp-block-post-author__byline {
+    font-size: 1em
+}
+
+.wp-block-post-author__avatar img {
+    border-radius: 999px;
+    vertical-align: middle
+}
+
+.wp-block-avatar img {
+    vertical-align: middle
+}
+
+.wp-block-tag-cloud.is-style-outline a {
+    border-radius: 999px;
+    padding: 0 1rem
+}
+
+.wp-block-tag-cloud.is-style-outline a:hover {
+    color: var(--wp--preset--color--background);
+    background-color: var(--wp--preset--color--primary)
+}
+
+.wp-block-term-description p:first-child {
+    margin-top: 0
+}
+
+.wp-block-term-description p:last-child {
+    margin-bottom: 0
+}
+
+.wp-block-search__input,
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline form input[type=email] {
+    border-color: var(--wp--preset--color--tertiary)
+}
+
+.wp-block-jetpack-contact-form input:not([type=submit]):not([type=checkbox]),
+.wp-block-jetpack-mailchimp input:not([type=submit]):not([type=checkbox]),
+.wp-block-jetpack-revue input:not([type=submit]):not([type=checkbox]),
+.wp-block-jetpack-contact-form select,
+.wp-block-jetpack-contact-form textarea {
+    background-color: #fff;
+    border: 1px solid var(--wp--preset--color--tertiary);
+    font-size: 1em;
+    padding: .75rem
+}
+
+.wp-block-jetpack-contact-form .wp-block-jetpack-button button,
+.wp-block-jetpack-mailchimp .wp-block-jetpack-button button,
+.wp-block-jetpack-revue .wp-block-jetpack-button button {
+    border-width: 0;
+    font-size: var(--wp--preset--font-size--x-small);
+    font-weight: 700;
+    letter-spacing: .02em;
+    line-height: inherit;
+    padding: 10px 15px
+}
+
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline .wp-block-jetpack-subscriptions__form .wp-block-jetpack-subscriptions__button,
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline .wp-block-jetpack-subscriptions__form .wp-block-jetpack-subscriptions__textfield .components-text-control__input,
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline .wp-block-jetpack-subscriptions__form button,
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline .wp-block-jetpack-subscriptions__form input[type=email],
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline form .wp-block-jetpack-subscriptions__button,
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline form .wp-block-jetpack-subscriptions__textfield .components-text-control__input,
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline form button,
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions__supports-newline form input[type=email] {
+    line-height: inherit
+}
