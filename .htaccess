@@ -1,3 +1,4 @@
+# Enable browser caching for assets
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresByType image/jpg "access plus 1 year"
@@ -7,7 +8,26 @@
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
     ExpiresByType text/html "access plus 1 week"
+</IfModule>
 
+# Enable GZIP compression for faster load times
+<IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
 
+# Ensure correct MIME types for JS and CSS files
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+    AddType text/css .css
+    AddType text/html .html
+</IfModule>
+
+# Handle Single-Page Application (SPA) routing (e.g., Vite, React, Vue)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Prevent directory and file serving if they exist
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    # Redirect all other requests to index.html
+    RewriteRule . /index.html [L]
 </IfModule>
