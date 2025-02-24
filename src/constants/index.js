@@ -60,16 +60,16 @@ export const navigation = [
     title: "Blogs",
     url: "#blogs",
   },
-  {
+  /* {
     id: "5",
     title: "Sign in",
     url: "#signup",
     onlyMobile: true,
-  },
+  }, */
   {
     id: "6",
     title: "Ardhi App",
-    url: "#login",
+    url: "https://ardhi-app.netlify.app/signup",
     onlyMobile: true,
   },
 

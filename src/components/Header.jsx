@@ -73,8 +73,8 @@ const Header = () => {
                     <HamburgerMenu />
                 </nav>
 
-                <Button className="hidden lg:flex"  href="https://ardhi.de/"  >
-                    Ardhi App
+                <Button className="hidden lg:flex">
+                    <a href="https://ardhi-app.netlify.app/" target="_blank" rel="noopener noreferrer"> Ardhi App</a>
                 </Button>
 
                 <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>

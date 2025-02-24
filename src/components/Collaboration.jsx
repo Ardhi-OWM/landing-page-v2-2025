@@ -27,7 +27,10 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-          <Button> <a href='/signup'>Try it now</a> </Button>
+          <Button >
+            <a href="https://ardhi-app.netlify.app/signup" target="_blank" rel="noopener noreferrer"> Try it now</a>
+          </Button>
+          {/*  <Button> <a href='/signup'>Try it now</a> </Button> */}
         </div>
         <div className='lg:ml-auto xl:w-[38rem] mt-4'>
           <p className='body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto'>
@@ -51,19 +54,19 @@ const Collaboration = () => {
             <ul>
               {collabApps.map((app, index) => (
                 <li className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 90}`}
-                 key={app.id}>
+                  key={app.id}>
                   <div className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${index * 90}`}>
                     <img className='m-auto'
-                    width={app.width}
-                    height={app.height}
-                    alt={app.title}
-                    src={app.icon} />
+                      width={app.width}
+                      height={app.height}
+                      alt={app.title}
+                      src={app.icon} />
                   </div>
                 </li>
               ))}
             </ul>
-            <LeftCurve/>
-            <RightCurve/>
+            <LeftCurve />
+            <RightCurve />
           </div>
         </div>
       </div>

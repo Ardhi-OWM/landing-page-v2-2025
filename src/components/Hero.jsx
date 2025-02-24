@@ -31,7 +31,7 @@ const Hero = () => {
                     className="relative z-1 max-w-[62rem] mx-auto text-center 
                     mb-[4rem] md:mb-20 lg:mb-[6rem]">
                     <h1 className="h1 mb-6">
-                    Turn URLs & Cloud Scripts into Smart Maps with &nbsp;
+                        Turn URLs & Cloud Model Results into Smart Maps with &nbsp;
                         <span className="inline-block relative">
                             Ardhi{" "}
                             <img src={curve}
@@ -43,13 +43,14 @@ const Hero = () => {
                         </span>
                     </h1>
                     <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-                    Turn geospatial results from Python scripts from cloud and Geodata URLs into interactive maps effortlessly.<br />
-                    
-                    Ardhi empowers teams to democratize data insights – let non-technical stakeholders explore, understand,
-                    and act on spatial results without code. Simplify decisions with clarity, straight from the cloud.
+                        Turn geospatial results from Python model from cloud and Geodata URLs into interactive maps effortlessly.<br /> <br />
+
+                      Empower teams to democratize data insights – let non-technical stakeholders explore, understand,
+                    and act on spatial results without code. 
+                       {/*  Simplify decisions with clarity, straight from the cloud. */}
                     </p>
-                    <Button href="/signup" white>
-                        Get Started
+                    <Button white>
+                        <a href="https://ardhi-app.netlify.app/signup" target="_blank" rel="noopener noreferrer"> Get Started</a>
                     </Button>
                 </div>
 
