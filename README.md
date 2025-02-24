@@ -69,7 +69,7 @@ npm start
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-**Your Name** - [info@ardhi.de](mailto:info@ardhi.de])
+**Contact Us** - [info@ardhi.de](mailto:info@ardhi.de])
 
 Project Link: [https://github.com/Ardhi-OWM/ardhi_supabase_clerk_latest.git](https://github.com/Ardhi-OWM/ardhi_supabase_clerk_latest.git)
 
